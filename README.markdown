@@ -11,7 +11,7 @@ Generates a sprites image from multiple images.
 Usage
 -----
  
-  ./sprites-gen.py output.png input1.png input2.png
+  ./sprites-gen.py output.png output.css input1.png input2.png
 
 Notes
 -----

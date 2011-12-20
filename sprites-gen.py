@@ -19,7 +19,8 @@ def combine(input_files, output_file, css_file,
             fixed_height=None, quality=None):
     """
     >>> if os.path.exists('test/tmp.output.png'): os.remove('test/tmp.output.png')
-    >>> combine(['test/image1.png', 'test/image2.png', 'test/image3.png'], 'test/tmp.output.png')
+    >>> if os.path.exists('test/tmp.output.css'): os.remove('test/tmp.output.css')
+    >>> combine(['test/image1.png', 'test/image2.png', 'test/image3.png'], 'test/tmp.output.png', 'test/tmp.output.css')
     >>> image = Image.open('test/tmp.output.png')
     >>> image.size
     (448, 256)
@@ -27,7 +28,8 @@ def combine(input_files, output_file, css_file,
     'RGBA'
 
     >>> if os.path.exists('test/tmp.output.png'): os.remove('test/tmp.output.png')
-    >>> combine(['test/image600x399.png'], 'test/tmp.output.png', fixed_height=100)
+    >>> if os.path.exists('test/tmp.output.css'): os.remove('test/tmp.output.css')
+    >>> combine(['test/image600x399.png'], 'test/tmp.output.png', 'test/tmp.output.css', fixed_height=100)
     >>> image = Image.open('test/tmp.output.png')
     >>> image.size
     (150, 100)
