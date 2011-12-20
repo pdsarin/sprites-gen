@@ -2,8 +2,8 @@ sprites-gen
 ===========
 
 * Author: David Elentok
-* Date: November, 2011
-* Github: <https://github.com/elentok/sprites-gen>
+* Date: November, 2011 (modified by Phil Sarin in December, 2011)
+* Github: <https://github.com/elentok/sprites-gen>, <https://github.com/pdsarin/sprites-gen>
 
 Generates a sprites image from multiple images.
 
